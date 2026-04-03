@@ -41,3 +41,6 @@ jobs:
       - name: List One Mule App
         run: >
           anypoint-cli-v4 runtime-mgr:application:describe 6ef52443-b7ab-4d44-9be3-64c49ffad54e --environment Sandbox
+      - name: List All Async API's in Exchange
+        run: >
+          anypoint-cli-v4 exchange:asset:list --organizationId b3875455-785b-461e-8239-06746330e0c6 -o json
